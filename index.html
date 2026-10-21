@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Puffy Closet</title>
-<meta name="description" content="A cozy dress-up game for little ones. Eight fluffy puffs, one magical closet, a drawing studio and a photo studio. No ads, no in-app purchases, no data collected.">
+<meta name="description" content="A cozy dress-up game for little ones on iPhone, iPad and Apple TV. Ten fluffy puffs, one magical closet, a runway show, a drawing studio and a photo studio. No ads, no in-app purchases, no data collected.">
 <meta property="og:title" content="Puffy Closet">
-<meta property="og:description" content="Eight fluffy puffs, one magical closet. A cozy dress-up game for little ones on iPhone and iPad.">
+<meta property="og:description" content="Ten fluffy puffs, one magical closet and a runway show. A cozy dress-up game for little ones on iPhone, iPad and Apple TV.">
 <meta property="og:image" content="images/header.jpg">
 <link rel="icon" href="images/icon.png">
 <link rel="apple-touch-icon" href="images/icon.png">
@@ -126,6 +126,7 @@
 
   .split { display: grid; grid-template-columns: 1.3fr 1fr; gap: 26px; align-items: center; }
   .split img { border-radius: 22px; box-shadow: var(--shadow); }
+  .split.flip { grid-template-columns: 1fr 1.3fr; }
 
   .safe { background: var(--card); border-radius: 28px; padding: 30px 22px; box-shadow: var(--shadow); text-align: center; }
   .safe ul { list-style: none; padding: 0; margin: 18px 0 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
@@ -138,7 +139,7 @@
   @media (max-width: 820px) {
     .phones { grid-template-columns: repeat(2, 1fr); }
     .features { grid-template-columns: 1fr; }
-    .split { grid-template-columns: 1fr; }
+    .split, .split.flip { grid-template-columns: 1fr; }
   }
 </style>
 </head>
@@ -147,11 +148,12 @@
     <div class="brand"><img src="images/icon.png" alt="">Puffy Closet</div>
     <div class="banner"><img src="images/header.jpg" alt="Puffy Closet logo with dressed-up bunny, bear, panda and dinosaur puffs in a pastel kids' room"></div>
     <div class="intro">
-      <h1>Eight fluffy puffs,<br>one magical closet</h1>
-      <p class="lead">A cozy dress-up game for little ones. Pick a puff, open the closet, dress it up, draw your own clothes and take sweet photos.</p>
+      <h1>Ten fluffy puffs,<br>one magical closet</h1>
+      <p class="lead">A cozy dress-up game for little ones. Pick a puff, open the closet, dress it up, draw your own clothes, take sweet photos and put on a runway show.</p>
       <div class="badges">
         <span class="badge">iPhone</span>
         <span class="badge">iPad</span>
+        <span class="badge">Apple TV</span>
         <span class="badge">iPhone Duo</span>
       </div>
       <a class="cta" href="https://apps.apple.com/app/id6824496518">Get it on the App Store</a>
@@ -160,13 +162,13 @@
 
   <main class="wrap">
     <section>
-      <h2>Tap, dress, draw, smile</h2>
+      <h2>Tap, dress, strut, smile</h2>
       <p class="sub">Big friendly buttons, no reading needed. Everything fits on one screen.</p>
       <div class="phones">
-        <div class="phone"><figure><img src="images/iphone-home.jpg" alt="Kids room with a bookshelf of eight puffs and a closet" loading="lazy"><figcaption>Pick a puff</figcaption></figure></div>
-        <div class="phone"><figure><img src="images/iphone-closet.jpg" alt="Open closet with hats, outfits, glasses, necklaces and shoes" loading="lazy"><figcaption>Open the closet</figcaption></figure></div>
-        <div class="phone"><figure><img src="images/iphone-studio.jpg" alt="Drawing studio with crayons on a cat puff" loading="lazy"><figcaption>Draw your own</figcaption></figure></div>
-        <div class="phone"><figure><img src="images/iphone-photo.jpg" alt="Photo studio with a bear puff at the beach" loading="lazy"><figcaption>Snap a photo</figcaption></figure></div>
+        <div class="phone"><figure><img src="images/iphone-home.jpg" alt="Kids room with a bookshelf of puffs, a hamster on top of the shelf and a flamingo on the closet" loading="lazy"><figcaption>Pick a puff</figcaption></figure></div>
+        <div class="phone"><figure><img src="images/iphone-closet.jpg" alt="Open closet with hats, outfits, glasses, necklaces and shoes in front of a bunny puff" loading="lazy"><figcaption>Open the closet</figcaption></figure></div>
+        <div class="phone"><figure><img src="images/iphone-runway.jpg" alt="Runway show with a bear puff in a top hat posing on stage" loading="lazy"><figcaption>Runway show</figcaption></figure></div>
+        <div class="phone"><figure><img src="images/iphone-photo.jpg" alt="Photo studio with a cat puff at the beach" loading="lazy"><figcaption>Snap a photo</figcaption></figure></div>
       </div>
     </section>
 
@@ -174,18 +176,18 @@
       <h2>Made for little hands</h2>
       <p class="sub">Simple taps, happy sounds and lots to discover.</p>
       <div class="features">
-        <div class="card"><h3><span class="dot" style="background:#ff8ab4"></span>A real closet</h3><p>Hats, tees, dresses, glasses, necklaces and a shoe rack. Tap an item and it flies onto your puff.</p></div>
+        <div class="card"><h3><span class="dot" style="background:#ff8ab4"></span>A real closet</h3><p>Hats, tees, dresses, hoodies, all kinds of glasses, necklaces and a shoe rack. Tap an item and it flies onto your puff. Just like real life, each item can be worn by one puff at a time.</p></div>
         <div class="card"><h3><span class="dot" style="background:#a08cf0"></span>Drawing studio</h3><p>Paint right on your puff with crayons, brushes, a paint bucket and an eraser. Your creations go into the closet.</p></div>
         <div class="card"><h3><span class="dot" style="background:#5fd3b0"></span>Photo studio</h3><p>Beach, snowy hill, castle, space, garden or stage. Or paint your own background with stickers.</p></div>
         <div class="card"><h3><span class="dot" style="background:#ffcf5a"></span>Puffs that move</h3><p>They stand up, dance and wiggle when you tap them, so you can see their shoes up close.</p></div>
-        <div class="card"><h3><span class="dot" style="background:#7cc4ff"></span>One owner per item</h3><p>Just like real life, a sweater worn by one puff can't be worn by another. Sharing is a little lesson.</p></div>
-        <div class="card"><h3><span class="dot" style="background:#ff9f6b"></span>Soft sounds</h3><p>A music-box lullaby and gentle effects, with a mute button for grown-ups.</p></div>
+        <div class="card"><h3><span class="dot" style="background:#ff6b8a"></span>Runway show</h3><p>Dressed-up puffs strut onto the stage, pose under the spotlights and take a bow together while the crowd cheers.</p></div>
+        <div class="card"><h3><span class="dot" style="background:#ff9f6b"></span>Soft sounds</h3><p>A music-box lullaby, a bouncy runway tune and gentle effects. Music and sound effects each have their own off switch.</p></div>
       </div>
     </section>
 
     <section>
       <div class="split">
-        <img src="images/ipad-closet.jpg" alt="iPad dress-up screen with a big dinosaur puff and a full closet" loading="lazy">
+        <img src="images/ipad-closet.jpg" alt="iPad dress-up screen with a big bunny puff and a full closet" loading="lazy">
         <div>
           <h2 style="text-align:left">Big and roomy on iPad</h2>
           <p style="color:var(--muted)">On iPad the puff sits big on the floor next to a full-height closet. On iPhone Duo the room spreads across both halves of the screen, and the puff even dances on a little runway in tent mode.</p>
@@ -194,9 +196,20 @@
     </section>
 
     <section>
+      <div class="split flip">
+        <div>
+          <h2 style="text-align:left">New: the big screen on Apple TV</h2>
+          <p style="color:var(--muted)">Bring the whole family to the couch. Pick a puff with the Siri Remote, dress it up from a closet full of tabs and watch the runway show on the TV. The same app works on iPhone, iPad and Apple TV with one purchase.</p>
+        </div>
+        <img src="images/tv-runway.jpg" alt="Apple TV runway show with a bear puff posing on stage" loading="lazy">
+      </div>
+      <img src="images/tv-home.jpg" alt="Apple TV home screen with ten puffs on a wide bookshelf" loading="lazy" style="margin-top:22px;border-radius:22px;box-shadow:var(--shadow)">
+    </section>
+
+    <section>
       <h2>Meet the puffs</h2>
-      <p class="sub">Teddy, Bunbun, Mochi, Pandy, Ribbit, Puffy, Rexy and Coco.</p>
-      <img src="images/characters.jpg" alt="All eight puffs, plain and dressed up" loading="lazy" style="max-width:640px;margin:0 auto;border-radius:22px;box-shadow:var(--shadow)">
+      <p class="sub">Teddy, Bunbun, Mochi, Pandy, Ribbit, Puffy, Rexy, Coco and the new friends Hamham and Fifi.</p>
+      <img src="images/characters.jpg" alt="All ten puffs, plain and dressed up" loading="lazy" style="max-width:640px;margin:0 auto;border-radius:22px;box-shadow:var(--shadow)">
     </section>
 
     <section>
