@@ -126,6 +126,9 @@
   .split img { border-radius: 22px; box-shadow: var(--shadow); }
   .split.flip { grid-template-columns: 1fr 1.3fr; }
 
+  .spatial-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+  .spatial-grid img { border-radius: 22px; box-shadow: var(--shadow); }
+
   .safe { background: var(--card); border-radius: 28px; padding: 30px 22px; box-shadow: var(--shadow); text-align: center; }
   .safe ul { list-style: none; padding: 0; margin: 18px 0 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
   .safe li { background: var(--lilac-soft); border-radius: 999px; padding: 8px 16px; font-weight: 800; }
@@ -138,6 +141,7 @@
     .phones { grid-template-columns: repeat(2, 1fr); }
     .features { grid-template-columns: 1fr; }
     .split, .split.flip { grid-template-columns: 1fr; }
+    .spatial-grid { grid-template-columns: 1fr; }
   }
 </style>
 </head>
@@ -153,6 +157,7 @@
         <span class="badge">iPad</span>
         <span class="badge">Apple TV</span>
         <span class="badge">iPhone Duo</span>
+        <span class="badge">Apple Vision Pro</span>
       </div>
       <a class="cta" href="https://apps.apple.com/app/id6824496518">Get it on the App Store</a>
     </div>
@@ -205,6 +210,19 @@
         <img src="images/store-tv-runway.jpg" alt="Apple TV runway show with a bear puff posing on stage" loading="lazy">
       </div>
       <img src="images/store-tv-home.jpg" alt="Now on Apple TV: the ten puffs on a wide bookshelf on the big screen" loading="lazy" style="margin-top:22px;border-radius:22px;box-shadow:var(--shadow)">
+    </section>
+
+    <section id="spatial">
+      <h2>Puffy Closet Spatial for Apple Vision Pro</h2>
+      <p class="sub">Step right into Puffy's room. Open a real 3D closet, walk your puff through the door to its own photo studio, watch the runway show all around you and flip through a 3D photo album.</p>
+      <div class="spatial-grid">
+        <img src="images/spatial-1.jpg" alt="Puffy Closet Spatial: step into Puffy's room with the bookshelf, the photo studio door and the open closet" loading="lazy">
+        <img src="images/spatial-2.jpg" alt="A real 3D closet with its doors open" loading="lazy">
+        <img src="images/spatial-3.jpg" alt="The photo studio room with polaroid backdrops and a big camera" loading="lazy">
+        <img src="images/spatial-4.jpg" alt="Runway show with Teddy in a top hat right in front of you" loading="lazy">
+      </div>
+      <p style="text-align:center;margin-top:22px"><span class="badge">Coming soon to Apple Vision Pro</span></p>
+      <p class="sub" style="margin-top:12px">A separate app for Apple Vision Pro.</p>
     </section>
 
     <section>
