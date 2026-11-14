@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Puffy Closet</title>
-<meta name="description" content="A cozy dress-up game for little ones on iPhone, iPad and Apple TV. Ten fluffy puffs, one magical closet, a Christmas room, a runway show, a drawing studio, a photo studio and album. No ads, no in-app purchases, no data collected.">
+<meta name="description" content="A cozy dress-up game for little ones on iPhone, iPad and Apple TV. Ten fluffy puffs, one magical closet, a Design Studio to make your own clothes, hide-and-seek, a tea party, party invitations, a Christmas room, a runway show, a photo studio and album. No ads, no in-app purchases, no data collected.">
 <meta property="og:title" content="Puffy Closet">
 <meta property="og:description" content="Ten fluffy puffs, one magical closet and a runway show. A cozy dress-up game for little ones on iPhone, iPad and Apple TV.">
 <meta property="og:image" content="images/header.jpg">
@@ -109,6 +109,7 @@
   .sub { text-align: center; color: var(--muted); margin: 0 auto 26px; max-width: 620px; }
 
   .phones { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+  .phones.two { grid-template-columns: repeat(2, 1fr); max-width: 66%; margin-left: auto; margin-right: auto; }
   .phone img { border-radius: 26px; box-shadow: var(--shadow); background: var(--card); }
 
   .features { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
@@ -139,6 +140,7 @@
 
   @media (max-width: 820px) {
     .phones { grid-template-columns: repeat(2, 1fr); }
+    .phones.two { max-width: none; }
     .features { grid-template-columns: 1fr; }
     .split, .split.flip { grid-template-columns: 1fr; }
     .spatial-grid { grid-template-columns: 1fr; }
@@ -151,7 +153,7 @@
     <div class="banner"><img src="images/header.jpg" alt="Puffy Closet logo with dressed-up bunny, bear, panda and dinosaur puffs in a pastel kids' room"></div>
     <div class="intro">
       <h1>Ten fluffy puffs,<br>one magical closet</h1>
-      <p class="lead">A cozy dress-up game for little ones. Pick a puff, open the closet, dress it up, draw your own clothes, take sweet photos and put on a runway show.</p>
+      <p class="lead">A cozy dress-up game for little ones. Pick a puff, open the closet, dress it up, design your own clothes, play hide-and-seek, take sweet photos and put on a runway show.</p>
       <div class="badges">
         <span class="badge">iPhone</span>
         <span class="badge">iPad</span>
@@ -160,13 +162,41 @@
         <span class="badge">Apple Vision Pro</span>
       </div>
       <a class="cta" href="https://apps.apple.com/app/id6824496518">Get it on the App Store</a>
-      <p class="lead" style="margin-top:14px;font-size:16px">New in 1.6: Fashion Challenge, Puffy Closet on Apple Watch, Puff's Day widgets and a magic season window.</p>
+      <p class="lead" style="margin-top:14px;font-size:16px">New in 2.0: the Design Studio. Make your own hats, glasses, outfits, necklaces and shoes, then watch them get sewn by magic.</p>
     </div>
   </header>
 
   <main class="wrap">
     <section id="new">
-      <h2>New: challenges, Apple Watch and widgets</h2>
+      <h2>New: the Design Studio</h2>
+      <p class="sub">Make your own clothes! Pick a hat, glasses, an outfit, a necklace or shoes, choose one of four shapes, then add a color, a pattern (stars, hearts, flowers, rainbow and more) and stickers while your puff wears it. Want it all your own? Tap Draw and paint right on your puff, or draw on a big canvas with crayons. Tap the check for a magic sewing moment, and every creation waits in My Designs, ready to wear. A little stack of your designs sits at the end of every closet shelf.</p>
+      <div class="phones">
+        <div class="phone"><img src="images/store-200-studio.jpg" alt="Design your own clothes: shapes, colors, patterns and stickers" loading="lazy"></div>
+        <div class="phone"><img src="images/store-200-designs.jpg" alt="My Designs: make it, sew it, wear it" loading="lazy"></div>
+        <div class="phone"><img src="images/store-200-closet.jpg" alt="Dress up ten plush friends from the open closet, with your own designs on every shelf" loading="lazy"></div>
+      </div>
+    </section>
+
+    <section id="games">
+      <h2>Hide-and-seek and a tea party</h2>
+      <p class="sub">A cozy playroom with a play tent, a toy chest and a big window. Tap the magnifier, count to three, and all ten puffs hide behind the tent, under the rug and in fifteen hiding places. Then tap the teapot: puffs sit at a little table, ask for cupcakes and cookies, clink their cups and dance when everyone is full. On iPhone and iPad.</p>
+      <div class="phones two">
+        <div class="phone"><img src="images/store-200-hide.jpg" alt="Hide and seek: count to three, then find them all" loading="lazy"></div>
+        <div class="phone"><img src="images/store-200-tea.jpg" alt="Tea party time: serve treats, pour tea, clink cups" loading="lazy"></div>
+      </div>
+    </section>
+
+    <section id="parties">
+      <h2>Party invitations</h2>
+      <p class="sub">Tap the invitation and choose where your puff goes. Blow out the candles at a friend's Birthday Party, tuck everyone in at the Pajama Party, or count down to fireworks at the New Year's Party in the holidays. Each party has its own closet full of tuxedos, sparkly dresses, pajamas and more.</p>
+      <div class="phones two">
+        <div class="phone"><img src="images/store-200-party.jpg" alt="Party time: tuxedos, sparkles and fireworks" loading="lazy"></div>
+        <div class="phone"><img src="images/store-200-birthday.jpg" alt="Birthday party: make a wish and blow the candles" loading="lazy"></div>
+      </div>
+    </section>
+
+    <section id="challenges">
+      <h2>Challenges, Apple Watch and widgets</h2>
       <p class="sub">Pick a challenge card like a beach day or a princess castle, dress your puff to match and the jury of puffs gives stars. Dress your puff on Apple Watch with the Digital Crown, and watch it wake up, eat pancakes, play, nap and dance through the day in Home Screen and Lock Screen widgets (tap Say hi and it cheers). Little ones always know what to do: when nobody taps for a moment, the next thing sparkles and a friendly hand shows where to tap. And tap the window to change the season: snow drifts in and the whole room turns Christmas.</p>
       <div class="phones">
         <div class="phone"><img src="images/store-160-challenge.jpg" alt="New Fashion Challenge: dress for the theme and win stars" loading="lazy"></div>
@@ -203,7 +233,7 @@
       <p class="sub">Simple taps, happy sounds and lots to discover.</p>
       <div class="features">
         <div class="card"><h3><span class="dot" style="background:#ff8ab4"></span>A real closet</h3><p>Hats, tees, dresses, hoodies, all kinds of glasses, necklaces and a shoe rack. Tap an item and it flies onto your puff. Just like real life, each item can be worn by one puff at a time.</p></div>
-        <div class="card"><h3><span class="dot" style="background:#a08cf0"></span>Drawing studio</h3><p>Paint right on your puff with crayons, brushes, a paint bucket and an eraser. Your creations go into the closet.</p></div>
+        <div class="card"><h3><span class="dot" style="background:#a08cf0"></span>Design Studio</h3><p>Pick a shape, a color, a pattern and stickers, or paint right on your puff with crayons, a paint bucket and an eraser. Your creations go into My Designs and the closet.</p></div>
         <div class="card"><h3><span class="dot" style="background:#5fd3b0"></span>Photo studio and album</h3><p>Beach, snowy hill, castle, space, garden or stage, plus six Christmas backdrops in the Christmas room. Or paint your own background with stickers. Every photo goes into a big photo album you can page through.</p></div>
         <div class="card"><h3><span class="dot" style="background:#ffcf5a"></span>Puffs that move</h3><p>They stand up, dance and wiggle when you tap them, so you can see their shoes up close. Drag them around the room, the closet and your photos.</p></div>
         <div class="card"><h3><span class="dot" style="background:#ff6b8a"></span>Runway show</h3><p>Dressed-up puffs strut onto the stage, pose under the spotlights and take a bow together while the crowd cheers. Line them up in rows and snap a group photo.</p></div>
